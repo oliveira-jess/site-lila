@@ -1,0 +1,331 @@
+:root {
+    --cor-padrao-texto: #667085;
+    --cor-padrao-vermelho: #8E2424;
+    --cor-padrao-cinza: #101828;
+    --cor-padrao-branca: #ffffff;
+
+    --fonte-padrao: "Inter", sans-serif;
+    --fonte-banner: "Merriweather", serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-padrao-texto);
+    line-height: 24px;
+}
+
+.header {
+    display: flex;
+    width: auto;
+    min-height: 8vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vh 5vw;
+    align-items: center;
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15vw;
+    box-sizing: border-box;
+    padding: 1vh 0 1vh 5vh;
+}
+
+.imagem-logo {
+    max-width: 150px;
+}
+
+#burguer {
+    border: 1px solid var(--cor-padrao-texto);
+    border-radius: 5px;
+    padding: 1vh;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+}
+
+#burguer:hover {
+    background-color: var(--cor-padrao-texto);
+    color: var(--cor-padrao-branca);
+}
+
+.box-menu-navegacao {
+    display: flex;
+    align-items: center;
+    gap: 8.4vw;
+    width: 100%;
+    margin-top: 1vh;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--cor-padrao-texto);
+}
+
+.botao-contato {
+    background: var(--cor-padrao-vermelho);
+    color: var(--cor-padrao-branca);
+    border-radius: 8px;
+    padding: 8px 18px;
+    border: none;
+    font-size: 1rem;
+}
+
+.banner-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1vh;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/banner.jpg") no-repeat center;
+    background-size: cover; 
+}
+
+.texto-banner {
+    font-family: var(--fonte-banner);
+    font-size: 2.5rem;
+    color: var(--cor-padrao-branca);
+    margin-bottom: 18vh;
+    line-height: 2rem;
+}
+
+.areas-atuacao {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+    margin-top: -70px;
+}
+
+.box-atuacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--cor-padrao-vermelho);
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    transition: 500ms all;
+}
+
+.box-atuacao:hover {
+    transform: scale(1.1);
+}
+
+.titulo-box-atuacao{
+    font-size: 1.5rem;
+    color: var(--cor-padrao-branca);
+    font-weight: 600;
+    text-align: center;
+}
+
+.texto-box-atuacao {
+    color: var(--cor-padrao-branca);
+    text-align: center;
+}
+
+.linha-divisao-secao {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 10vh;
+    height:3px;
+    border:none;
+    background: var(--cor-padrao-texto);
+}
+
+.sobre-nos{
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+.box-texto-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40vw;
+    font-size: 1.25rem;
+}
+
+.titulo-secao {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--cor-padrao-cinza);
+    line-height: 60px;
+    text-align: center;
+}
+
+.titulo-secao + .titulo-secao {
+    margin-left: 100px;
+    margin-top: -35px;
+}
+
+.texto-sobre-nos {
+    font-size: 1rem;
+}
+
+.servicos {
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url("../img/banner-servicos.jpg") no-repeat center;
+    background-size: cover; 
+    width: 100%;
+    gap: 6vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 10vh;
+    box-sizing: border-box;
+}
+
+.area-servicos {
+    background: var(--cor-padrao-cinza);
+}
+
+.box-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8vh;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20vw;
+}
+
+.formulario{
+	margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+form label, form legend {
+	font-size: 1.25rem;
+}
+
+.input-padrao {
+	padding: 10px 20px;
+	border: 1px solid #948d8d;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.enviar {
+    font-size: 1rem;
+	font-weight: bold;
+	padding: 10px 0;
+	background-color: var(--cor-padrao-vermelho);
+	color: var(--cor-padrao-branca);
+	border: none;
+	border-radius: 20px;
+	transition: 500ms all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: var(--cor-padrao-cinza);
+	transform: scale(1.1);
+}
+
+.preferencia-contato {
+    display: flex;
+    flex-direction: column;
+	margin-top: 10px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+	text-align: center;
+	background: url("../img/bg.jpg");
+	padding: 5vh;
+}
+
+.box-redes {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    color: var(--cor-padrao-branca);
+}
+
+.copyright{
+	color: var(--cor-padrao-branca);
+	font-size: 13px;
+}
+
+/* configurar os estilos da página para telas menores */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #burguer {
+        display: block;
+    }
+
+    #itensMenu {
+        display: none;
+        width: auto;
+    }
+
+    .box-menu-navegacao {
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        gap: 1vh;
+    }
+
+    .texto-banner {
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .areas-atuacao {
+        flex-wrap: wrap;
+    }
+
+    .sobre-nos {
+        flex-wrap: wrap;
+    }
+
+    .titulo-secao {
+        font-size: 2rem;
+    }
+
+    .box-texto-sobre-nos {
+        max-width: max-content;
+        padding: 0 8vw;
+        text-align: justify;
+    }
+
+    .box-redes {
+        flex-wrap: wrap;
+    }
+
+	.footer img {
+		width: 5vh;
+	}
+}
