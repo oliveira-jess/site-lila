@@ -199,8 +199,12 @@
             function clickMenu() {
                 if(itensMenu.style.display == 'none'){
                     itensMenu.style.display = 'block';
+                    document.getElementById('burguer').style.background = '#667085';
+                    document.getElementById('burguer').style.color = 'white';
                 } else {
                     itensMenu.style.display = 'none';
+                    document.getElementById('burguer').style.background = 'white';
+                    document.getElementById('burguer').style.color = '#667085';
                 }
             }
         </script>
